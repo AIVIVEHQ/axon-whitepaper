@@ -62,4 +62,6 @@ description: AXON Finance 视觉识别规范
 | --- | --- |
 | 官网 | https://axonfinance.xyz |
 | Telegram | https://t.me/AXONFinanceReal |
+| Medium | https://medium.com/@axonfinancexyz |
+| YouTube | https://www.youtube.com/@AXONFinanceXYZ |
 | 邮箱 | contact@axonfinance.xyz |
