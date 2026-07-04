@@ -1,0 +1,62 @@
+# Table of contents
+
+* [AXON Finance 白皮书](README.md)
+
+## Part I · 愿景与定位
+
+* [引读：地基与切口](part1-vision/README.md)
+  * [1.1 核心命题：L1 是地基，PayFi 是切口](part1-vision/1-1-thesis.md)
+  * [1.2 AXON Finance 是什么：双层叙事](part1-vision/1-2-what-is-axon.md)
+  * [1.3 设计哲学与第一性原理](part1-vision/1-3-design-principles.md)
+
+## Part II · 市场与机会
+
+* [引读：为什么是现在](part2-market/README.md)
+  * [2.1 稳定币成为全球支付层](part2-market/2-1-stablecoin-era.md)
+  * [2.2 PayFi 的诞生与货币时间价值](part2-market/2-2-payfi-thesis.md)
+  * [2.3 跨境支付的结构性痛点](part2-market/2-3-crossborder-pain.md)
+  * [2.4 AI 代理经济的兴起](part2-market/2-4-ai-agent-economy.md)
+  * [2.5 竞争格局](part2-market/2-5-competitive-landscape.md)
+  * [2.6 白空间与市场规模](part2-market/2-6-whitespace.md)
+
+## Part III · 技术架构
+
+* [引读：把确定性做进地基](part3-architecture/README.md)
+  * [3.1 为什么必须自有 L1](part3-architecture/3-1-why-own-l1.md)
+  * [3.2 五层架构总览](part3-architecture/3-2-layered-architecture.md)
+  * [3.3 共识、亚秒最终性与性能目标](part3-architecture/3-3-consensus-finality.md)
+  * [3.4 支付最终性与反双花](part3-architecture/3-4-payment-finality.md)
+  * [3.5 稳定币与喂价：多源校验与熔断](part3-architecture/3-5-oracle-safety.md)
+  * [3.6 可插拔合规网关](part3-architecture/3-6-compliance-gateway.md)
+  * [3.7 账户抽象、会话密钥与 Paymaster](part3-architecture/3-7-account-abstraction.md)
+
+## Part IV · PayFi 引擎
+
+* [引读：四场景层层叠加价值](part4-payfi/README.md)
+  * [4.1 稳定币即时结算 Rail](part4-payfi/4-1-settlement-rail.md)
+  * [4.2 PayFi 货币市场：浮存金与链上信贷](part4-payfi/4-2-money-market.md)
+  * [4.3 跨境 B2B 与商户收单](part4-payfi/4-3-crossborder-b2b.md)
+  * [4.4 货币时间价值的金融学](part4-payfi/4-4-time-value-of-money.md)
+
+## Part V · AI 原生
+
+* [引读：让 AI 安全地接进支付](part5-ai/README.md)
+  * [5.1 Agentic Payments 的真问题：授权与安全](part5-ai/5-1-agentic-payments.md)
+  * [5.2 可控支付执行](part5-ai/5-2-controlled-execution.md)
+  * [5.3 x402 与 M2M 微支付](part5-ai/5-3-x402-m2m.md)
+  * [5.4 诚实的 AI 定位](part5-ai/5-4-honest-ai.md)
+
+## Part VI · 路线图与治理
+
+* [引读：每阶段都有退出价值](part6-roadmap/README.md)
+  * [6.1 路线图 P0 → P3+](part6-roadmap/6-1-roadmap.md)
+  * [6.2 治理框架](part6-roadmap/6-2-governance.md)
+  * [6.3 团队与资源网络](part6-roadmap/6-3-team-partners.md)
+
+## 附录
+
+* [附录导航](appendix/README.md)
+  * [附录 A · 术语表](appendix/a-glossary.md)
+  * [附录 B · 参数汇总](appendix/b-parameters.md)
+  * [附录 C · 品牌与商标](appendix/c-brand.md)
+  * [附录 D · 参考与数据来源](appendix/d-references.md)
