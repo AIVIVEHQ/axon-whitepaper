@@ -60,3 +60,54 @@
   * [附录 B · 参数汇总](appendix/b-parameters.md)
   * [附录 C · 品牌与商标](appendix/c-brand.md)
   * [附录 D · 参考与数据来源](appendix/d-references.md)
+
+## 技术黄皮书 · Technical Yellowpaper
+
+* [黄皮书导言](yellowpaper/README.md)
+
+## 黄皮书 A · 系统模型与密码学
+
+* [A.1 系统模型、假设与安全目标](yellowpaper/a1-system-model.md)
+* [A.2 密码学基础与承诺](yellowpaper/a2-cryptography.md)
+
+## 黄皮书 B · 共识与账本
+
+* [B.1 BFT PoS 共识协议](yellowpaper/b1-consensus.md)
+* [B.2 验证者集合与区块生产](yellowpaper/b2-validators.md)
+* [B.3 状态模型与状态承诺](yellowpaper/b3-state.md)
+* [B.4 排序层、Entry-Log 与确定性执行](yellowpaper/b4-sequencing.md)
+* [B.5 支付最终性、反双花与恢复](yellowpaper/b5-finality.md)
+
+## 黄皮书 C · 账户抽象与 AI 授权
+
+* [C.1 账户抽象与交易执行](yellowpaper/c1-account-abstraction.md)
+* [C.2 会话密钥与授权模型](yellowpaper/c2-session-keys.md)
+* [C.3 策略沙盒与 Paymaster](yellowpaper/c3-policy-paymaster.md)
+
+## 黄皮书 D · 结算 · 喂价 · 合规
+
+* [D.1 稳定币结算引擎](yellowpaper/d1-settlement.md)
+* [D.2 预言机与喂价安全](yellowpaper/d2-oracle.md)
+* [D.3 可插拔合规网关](yellowpaper/d3-compliance.md)
+
+## 黄皮书 E · PayFi 协议机制
+
+* [E.1 PayFi 货币市场](yellowpaper/e1-money-market.md)
+* [E.2 信贷风控与清算](yellowpaper/e2-liquidation.md)
+
+## 黄皮书 F · 协议经济与安全
+
+* [F.1 Gas 与费用市场](yellowpaper/f1-gas-fees.md)
+* [F.2 质押、验证者经济与罚没](yellowpaper/f2-staking-slashing.md)
+* [F.3 安全模型与威胁分析](yellowpaper/f3-security.md)
+
+## 黄皮书 G · 网络与性能
+
+* [G.1 网络层与交易传播](yellowpaper/g1-networking.md)
+* [G.2 性能模型与设计目标](yellowpaper/g2-performance.md)
+
+## 黄皮书 · 附录
+
+* [附录 I · 符号表](yellowpaper/appendix-notation.md)
+* [附录 II · 协议参数表](yellowpaper/appendix-parameters.md)
+* [附录 III · 核心数据结构](yellowpaper/appendix-datastructures.md)
