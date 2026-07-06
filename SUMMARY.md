@@ -37,6 +37,7 @@
   * [4.2 PayFi 货币市场：浮存金与链上信贷](part4-payfi/4-2-money-market.md)
   * [4.3 跨境 B2B 与商户收单](part4-payfi/4-3-crossborder-b2b.md)
   * [4.4 货币时间价值的金融学](part4-payfi/4-4-time-value-of-money.md)
+  * [4.5 美股带单引擎：首个 PayFi 旗舰产品](part4-payfi/4-5-copy-trading-engine.md)
 
 ## Part V · AI 原生
 
@@ -52,6 +53,14 @@
   * [6.1 路线图 P0 → P3+](part6-roadmap/6-1-roadmap.md)
   * [6.2 治理框架](part6-roadmap/6-2-governance.md)
   * [6.3 团队与资源网络](part6-roadmap/6-3-team-partners.md)
+  * [6.4 生态启动与第一赛季](part6-roadmap/6-4-ecosystem-season.md)
+
+## Part VII · 代币经济
+
+* [引读：价值从哪里来](part7-tokenomics/README.md)
+  * [7.1 供应与分配](part7-tokenomics/7-1-supply-allocation.md)
+  * [7.2 解锁与流通曲线](part7-tokenomics/7-2-vesting-circulation.md)
+  * [7.3 代币效用与通缩飞轮](part7-tokenomics/7-3-utility-flywheel.md)
 
 ## 附录
 

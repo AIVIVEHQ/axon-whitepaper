@@ -17,9 +17,11 @@ flowchart TB
     S --> X["③ 跨境 B2B 与商户收单<br/>触达实体商业"]
     M --> V["超额收益来源"]
     X --> V
+    M --> C["④ 美股带单引擎<br/>首个落地旗舰产品"]
     style S fill:#f5541c,stroke:#0a0908,color:#fff
     style M fill:#ff8a3d,stroke:#0a0908,color:#0a0908
     style X fill:#ff8a3d,stroke:#0a0908,color:#0a0908
+    style C fill:#f5541c,stroke:#0a0908,color:#fff
 ```
 
 本部分的章节地图：
@@ -28,3 +30,4 @@ flowchart TB
 * **4.2** PayFi 货币市场 —— 浮存金与链上信贷，PayFi 的超额收益来源。
 * **4.3** 跨境 B2B 与商户收单 —— 让 PayFi 触达实体商业。
 * **4.4** 货币时间价值的金融学 —— 支撑这一切的金融第一性原理。
+* **4.5** 美股带单引擎 —— 把上述能力兑现成产品的首个 PayFi 旗舰落地。
