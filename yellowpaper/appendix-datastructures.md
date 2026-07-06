@@ -95,6 +95,58 @@ SessionPolicy := {
 }
 ```
 
+## 带单场次 CopyRound
+
+```text
+CopyRound := {                        // 官方带单场次（E.3.3）
+  round_id   : Hash
+  asset      : SymbolId               // 标的（市值前 100 或核心 ETF）
+  t_cat      : u64                    // 确定性催化剂时点
+  g          : Ratio                  // 保底率 ∈ [1%,3%]（E.3.5）
+  cap        : u128                   // 单场跟单总额上限
+  tier_min   : u8                     // 最低参与等级（银/金/钻）
+  window     : (t_open: u64, t_settle: u64)   // 结算窗口 2–24h
+  state      : Open | Locked | Settling | Settled | Aborted | Refunded  // E.3.4
+  max_loss   : u128                   // 对冲后最大可能损失 χ·P（E.4.2）
+}
+```
+
+## 托管专户 EscrowAccount
+
+```text
+EscrowAccount := {                    // 按单托管，Escrow/Conditional 实例（D.1 / E.3.4）
+  round_id   : Hash
+  principals : Map<Addr, u128>        // 各跟单人本金 p_i
+  total_P    : u128                   // 跟单总额 ΣP_i ≤ cap
+  release    : Predicate              // 释放谓词 = 「预言机证明该场已结算」
+  isolation  : { user, desk, treasury 严格隔离 }   // E.3.2 不变式
+}
+```
+
+## 结算证明 SettlementAttestation
+
+```text
+SettlementAttestation := {            // 链下结算结果上链证明（E.3.5）
+  round_id   : Hash
+  net_pnl    : i128                   // 已证明的链下净收益
+  price_ref  : PriceProof             // 结算价：多源中位数 + MAD（D.2）
+  sig        : AttestSig              // 量化台签名，Vrf_attest 验证（D.3.4）
+  challenge  : (until: u64, disputed: bool)   // 争议窗口 Δ_chal
+}
+```
+
+## 带单准备金池 ReservePool
+
+```text
+ReservePool := {                      // 带单准备金池 R_ct（E.4.3）
+  balance    : u128                   // 池内资金
+  open_loss  : u128                   // Σ MaxLoss(ρ)，所有未结场次
+  coverage   : Ratio                  // Ξ = balance / open_loss ≥ 150%
+  index      : u128                   // rebasing 份额指数（借 E.1.2）
+  state      : Normal | Throttled | Halted | Protection   // E.4.4
+}
+```
+
 ## 状态证明 Proof
 
 ```text

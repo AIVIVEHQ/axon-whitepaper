@@ -64,7 +64,7 @@ $$\mathrm{TWAP}_{[t-\Delta,\,t]} = \frac{1}{\Delta}\int_{t-\Delta}^{t} \hat{p}(s
 | 稳定币脱锚 | Depeg guard |
 | 数据整体异常 | 熔断暂停 + 治理介入 |
 
-喂价安全是 PayFi 货币市场（[E.1](e1-money-market.md)）与清算（[E.2](e2-liquidation.md)）能安全运转的前提——**没有可信的价格，就没有可信的信贷与清算**。
+喂价安全是 PayFi 货币市场（[E.1](e1-money-market.md)）与清算（[E.2](e2-liquidation.md)）能安全运转的前提——**没有可信的价格，就没有可信的信贷与清算**。美股带单引擎的链下结算价与结算结果证明也复用本机制（[E.3.5](e3-copy-trading.md)）：喂价 `Halted` 态下带单结算暂停，拒绝用残缺数据分账。
 
 ---
 

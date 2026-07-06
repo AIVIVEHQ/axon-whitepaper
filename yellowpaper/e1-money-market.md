@@ -52,7 +52,7 @@ $$H = \frac{\sum_i C_i \cdot \lambda_i}{\text{Debt}}$$
 
 $$H \geq 1 \Rightarrow \text{健康}, \qquad H < 1 \Rightarrow \text{可清算（见 E.2）}$$
 
-借款时要求 $H \geq H_{\text{open}} > 1$ 留出安全缓冲；随喂价波动 $H$ 实时变化，跌破 $1$ 触发清算。
+借款时要求 $H \geq H_{\text{open}} > 1$ 留出安全缓冲；随喂价波动 $H$ 实时变化，跌破 $1$ 触发清算。带单准备金池的覆盖率不变式 $\Xi \geq 150\%$ 借用同一思想（准备金之于敞口，正如抵押之于债务，[E.4.3](e4-reserve-risk.md)）。
 
 ## E.1.6 一点金融背景
 

@@ -50,6 +50,8 @@ hook 作为链层挂载点，第三方合规服务商可按需接入；不同业
 
 $$\mathsf{hook}(\mathsf{tx}) : \mathsf{Vrf}_{\text{attest}}\big(pk_{\text{issuer}},\ \text{claim},\ \pi\big) \to \{0,1\}$$
 
+同一 attestation 机制也是带单引擎链下**结算结果证明**的格式底座（[E.3.5](e3-copy-trading.md)）：量化台对「本场结算结果」出具带签名的 claim，由 $\mathsf{Vrf}_{\text{attest}}$ 验证后方可分账。
+
 ## D.3.5 分阶段落地
 
 合规能力随可插拔架构演进：

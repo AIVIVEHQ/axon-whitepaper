@@ -103,6 +103,8 @@
 
 * [E.1 PayFi 货币市场](yellowpaper/e1-money-market.md)
 * [E.2 信贷风控与清算](yellowpaper/e2-liquidation.md)
+* [E.3 美股带单引擎](yellowpaper/e3-copy-trading.md)
+* [E.4 带单准备金与风控](yellowpaper/e4-reserve-risk.md)
 
 ## 黄皮书 F · 协议经济与安全
 

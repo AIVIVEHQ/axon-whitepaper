@@ -23,6 +23,9 @@ description: 威胁矩阵与缓解
 | **DoS** | 资源耗尽 | gas 计量 + 限流 + Paymaster 配额 | [F.1](f1-gas-fees.md)·[D.3](d3-compliance.md) |
 | **女巫攻击** | 伪造大量身份 | 权益加权（非节点计数）+ 准入门槛 | [B.2](b2-validators.md) |
 | **状态膨胀攻击** | 灌爆状态 | 状态 gas 定价 + 归档/租金 | [B.3.5](b3-state.md)·[F.1.1](f1-gas-fees.md) |
+| **伪造带单结算** | 量化台上报假结算结果套利 | 多源结算价 + attestation 证明 + 争议窗口 | [E.3.5](e3-copy-trading.md)·[D.2](d2-oracle.md) |
+| **带单方跑路 / 超额** | 带单方失职或挪用 | 信誉押金罚没 + 资金隔离 + 本金优先退回 | [E.4.5](e4-reserve-risk.md)·[E.3.2](e3-copy-trading.md) |
+| **准备金挤兑** | 极端行情下敞口超准备金 | 覆盖率不变式 $\Xi\geq150\%$ + 熔断 + 黑天鹅保护 | [E.4.3](e4-reserve-risk.md)·[E.4.4](e4-reserve-risk.md) |
 
 ## F.3.2 长程攻击与弱主观性
 

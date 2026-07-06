@@ -63,6 +63,12 @@ description: 全文形式化记号约定
 | $\lambda_i$ | 抵押物 $i$ 的清算阈值 | [E.1.5](e1-money-market.md) |
 | $\phi$ | 准备金因子 | [E.1.3](e1-money-market.md)·[E.2.4](e2-liquidation.md) |
 | $\hat{p},\ \mathrm{MAD},\ z_i$ | 聚合价格 / 中位数绝对偏差 / 偏差得分 | [D.2](d2-oracle.md) |
+| $g$ | 带单保底率（$\in[1\%,3\%]$） | [E.3.5](e3-copy-trading.md) |
+| $\chi$ | 对冲后单场最大损失比例 | [E.4.2](e4-reserve-risk.md) |
+| $R_{ct}$ | 带单准备金池 | [E.4.3](e4-reserve-risk.md) |
+| $\Xi=R_{ct}/\sum\text{MaxLoss}$ | 带单准备金覆盖率（$\geq\Xi_{\min}=150\%$） | [E.4.3](e4-reserve-risk.md) |
+| $\phi_{ct}$ | 带单准备金注入费率 | [E.4.3](e4-reserve-risk.md) |
+| $\Delta_{\text{chal}}$ | 结算争议窗口 | [E.3.5](e3-copy-trading.md) |
 | $\mathsf{gas}(\mathsf{tx})$ | 交易 gas | [F.1.1](f1-gas-fees.md) |
 | $T_{\text{unbond}}$ | 解绑期 | [F.2.4](f2-staking-slashing.md) |
 | $\Theta,\ \text{fee}$ | 吞吐 / 单笔费用 | [G.2](g2-performance.md) |
