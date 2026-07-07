@@ -1,0 +1,8 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+title: AXON Finance Whitepaper
+description: The high-performance, AI-native PayFi L1
