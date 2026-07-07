@@ -17,24 +17,18 @@ AXON Finance 拥有一支配置顶级的 **6 人核心团队**，兼具顶级技
 
 **核心成员：**
 
-1. **[Atul Kamble](https://www.linkedin.com/in/atulkambleiitbhu/)（Founder & CEO）**
-   * 背景：Harvard MBA，Oxford MS，IIT BHU。前 OpenAI 产品总监，Palantir 研发副总裁。
-   * 交易经验：15+ 年美股宏观策略与价值投资。
-2. **[Jesse Liu](https://www.linkedin.com/in/jesse-liu-aa3b99208/)（Co-Founder & CTO）**
-   * 背景：MIT 计算机本硕。前 Tesla Autopilot 视觉算法核心，Google Brain 研究员。
-   * 交易经验：10+ 年高频量化与算法交易。
-3. **[Panagiotis Simatis](https://www.linkedin.com/in/panos-simatis/)（AI and DB Expert）**
-   * 背景：MIT 计算机博士。前 Tesla Autopilot 数据工程师，OpenAI 高级研究员。
-   * 交易经验：12+ 年美股高频及 NLP 情绪量化交易。
-4. **[Ibraheem Inam](https://www.linkedin.com/in/ibraheem-inam-129801133/)（Senior IMU Algorithm Engineer）**
-   * 背景：MIT EECS 硕士，Caltech 本科。前 Tesla 传感器融合工程师，SpaceX 导航控制工程师。
-   * 交易经验：6+ 年硬科技、半导体及 EV 供应链选股投资。
-5. **[Derek Fung](https://www.linkedin.com/in/derek-fung-uxui/)（AI Product Designer）**
-   * 背景：Stanford 硕士，RISD 本科。前 OpenAI 核心产品设计，Tesla UI/UX。
-   * 交易经验：8+ 年美股科技股动量及期权交易。
-6. **[Spencer Shi](https://www.linkedin.com/in/spencer-shi19/)（BD Lead）**
-   * 背景：宾夕法尼亚大学沃顿商学院（Wharton）。前 Tesla 全球商务拓展，高盛投行部 TMT 组。
-   * 交易经验：5+ 年机构级美股期权策略及宏观投资。
+1. **[David CICORIA](https://www.linkedin.com/in/david-cicoria/)（Founder & CEO）**
+   - **背景**：Harvard MBA, Oxford MS, IIT BHU。前 OpenAI 产品总监，Palantir 工程副总裁。15+ 年美股宏观策略与价值投资经验。
+2. **[Darren Woo](https://www.linkedin.com/in/darren-woo-ai/)（Co-Founder & CTO）**
+   - **背景**：MIT 计算机本硕。前 Tesla Autopilot 视觉算法核心，Google Brain 研究员。10+ 年高频量化与算法交易经验。
+3. **[Alexis Colin](https://www.linkedin.com/in/alexis-colin/)（AI and DB Expert）**
+   - **背景**：MIT 计算机博士。前 Tesla Autopilot 数据工程师，OpenAI 高级研究员。12+ 年美股高频及 NLP 情绪量化交易。
+4. **[Stephane Roche](https://www.linkedin.com/in/stephane-roche/)（Senior IMU Algorithm Engineer）**
+   - **背景**：MIT EECS 硕士，Caltech 本科。前 Tesla 传感器融合工程师，SpaceX 导航控制工程师。6+ 年硬科技、半导体及 EV 供应链选股投资。
+5. **[Eden(Zihang) Tang](https://www.linkedin.com/in/eden-tang88/)（AI Product Designer）**
+   - **背景**：Stanford 硕士，RISD 本科。前 OpenAI 核心产品设计，Tesla UI/UX。8+ 年美股科技股动量及期权交易。
+6. **[Hyesung Yang](https://www.linkedin.com/in/hyesung-yang19/)（BD Lead）**
+   - **背景**：宾夕法尼亚大学沃顿商学院（Wharton）。前 Tesla 全球商务拓展，高盛投行部 TMT 组。5+ 年机构级美股期权策略及宏观投资。
 
 这支团队的构成，映射了 AXON 的双重基因：**既懂高性能系统与算法（把链造出来），又懂 AI 与产品（把 AI 安全地接进支付），还有商业拓展与美股交易的能力（把 rail 铺进真实商业、把带单策略跑成真实收益）。**
 
