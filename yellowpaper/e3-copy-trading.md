@@ -1,13 +1,13 @@
 ---
 title: E.3 美股带单引擎
-description: 首个 PayFi 旗舰产品的协议机制：托管、结算证明与授权
+description: 首个开放生态的协议机制：托管、结算证明与授权
 ---
 
 # E.3 美股带单引擎
 
-> **设计状态**：proposed design（协议设计模型）。托管、结算证明与授权机制为设计方案；产品阈值（保底率 1%~3%、等级额度、结算窗口 2–24h）为已定稿产品参数，未指定的协议内部参数（对冲比例、争议窗口长度、注入费率）标 `待定/治理定`。业务侧机制白皮书见 [4.5 美股带单引擎](../part4-payfi/4-5-copy-trading-engine.md)；准备金与风控见 [E.4](e4-reserve-risk.md)。
+> **设计状态**：proposed design（协议设计模型）。托管、结算证明与授权机制为设计方案；产品阈值（保底率 1%~3%、结算窗口 2–24h）为已定稿产品参数，未指定的协议内部参数（对冲比例、争议窗口长度、注入费率）标 `待定/治理定`。业务侧机制白皮书见 [4.5 美股带单引擎](../part4-payfi/4-5-copy-trading-engine.md)；准备金与风控见 [E.4](e4-reserve-risk.md)。
 
-美股带单引擎是 AXON L1 **首个重磅落地的 PayFi 旗舰产品**。本节把它的产品机制深化到协议规范级：它**不是一套独立的新链上系统**，而是把已有的结算原语（[D.1](d1-settlement.md)）、预言机（[D.2](d2-oracle.md)）、账户抽象与授权（[C.1](c1-account-abstraction.md)–[C.3](c3-policy-paymaster.md)）组装成一个「确定性 PayFi 生息」产品。它对外的确定性收益承诺，由 [E.4](e4-reserve-risk.md) 的准备金与风控在协议层兜底。
+美股带单引擎是 AXON L1 **首个开放生态**。本节把它的机制深化到协议规范级：它**不是一套独立的新链上系统**，而是把已有的结算原语（[D.1](d1-settlement.md)）、预言机（[D.2](d2-oracle.md)）、账户抽象与授权（[C.1](c1-account-abstraction.md)–[C.3](c3-policy-paymaster.md)）组装成一个「确定性 PayFi 生息」场景。它对外的确定性收益承诺，由 [E.4](e4-reserve-risk.md) 的准备金与风控在协议层兜底。
 
 ## E.3.1 目标与设计边界
 
@@ -45,9 +45,9 @@ $$A_u \cap A_q = A_u \cap R_{ct} = \varnothing, \qquad \text{用户可提取额}
 
 一个「官方带单场次」是一个链上登记的 `RoundSpec`（数据结构见 [附录 III](appendix-datastructures.md)）：
 
-$$\rho = \big(\, \text{asset},\ t_{\text{cat}},\ g,\ \text{Cap},\ \text{tier}_{\min},\ [\,t_{\text{open}}, t_{\text{settle}}\,] \,\big)$$
+$$\rho = \big(\, \text{asset},\ t_{\text{cat}},\ g,\ \text{Cap},\ [\,t_{\text{open}}, t_{\text{settle}}\,] \,\big)$$
 
-其中 $t_{\text{cat}}$ 为确定性催化剂时点、$g \in [1\%, 3\%]$ 为保底率、$\text{Cap}$ 为单场跟单总额上限、$\text{tier}_{\min}$ 为最低参与等级、结算窗口 $t_{\text{settle}} - t_{\text{open}} \in [2, 24]\,\text{h}$。
+其中 $t_{\text{cat}}$ 为确定性催化剂时点、$g \in [1\%, 3\%]$ 为保底率、$\text{Cap}$ 为单场跟单总额上限、结算窗口 $t_{\text{settle}} - t_{\text{open}} \in [2, 24]\,\text{h}$。
 
 场次登记须通过**准入谓词** $\text{Admit}(\rho)$——协议只承认满足下述四条的场次为「官方带单」，从源头排除劣质标的与单边裸赌：
 
@@ -124,21 +124,13 @@ SettleRound(round ρ, attestation π):
 
 跟单是**有界授权**（[C.2](c2-session-keys.md)）的一个直接应用：用户授予一个**跟单会话密钥**，其策略 $P_{\text{copy}}$ 把权限精确约束在「带单」这一件事上：
 
-$$P_{\text{copy}} = \big(\, L_{\text{tx}} = \text{单场额度},\ L_{\text{total}} = \text{等级累计上限},\ W = \{\text{托管专户},\ \text{结算合约}\},\ F = \{\text{跟单},\ \text{赎回}\},\ \rho_{\text{rate}} \,\big)$$
+$$P_{\text{copy}} = \big(\, L_{\text{tx}} = \text{单场额度},\ L_{\text{total}} = \text{累计额度上限},\ W = \{\text{托管专户},\ \text{结算合约}\},\ F = \{\text{跟单},\ \text{赎回}\},\ \rho_{\text{rate}} \,\big)$$
 
 授权谓词 $\text{Auth}_{P_{\text{copy}}}$ 直接复用 [C.2](c2-session-keys.md) 的合取判定——任一约束不满足即拒该笔，密钥仍有效。三条安全性质随之继承：**有界**（跟单额度封顶）、**定向**（资金只能进托管/结算合约，去不了别处）、**可撤销**（用户一键退出 = `Revoke(session_id)`，一个区块内生效）。
 
 **零 Gas**：预测平台作为 Paymaster（[C.3](c3-policy-paymaster.md)）代付跟单交易的 gas——用户全程在稳定币语义内操作，无需感知 gas，`resolve_paymaster` 的保证金与配额机制防止代付被抽干。
 
-**等级额度**：用户的链上交互深度决定其单场额度上限 $L_{\text{tx}}$，映射为会话密钥 scope 的 $L_{\text{tx}}$（数值为已定稿产品参数）：
-
-| 等级 | 参与门槛 | 单场额度 $L_{\text{tx}}$ |
-| --- | --- | --- |
-| 白银 | 普通预测平台用户 | 1,000 USDT |
-| 黄金 | AXON 活跃交互者 | 10,000 USDT |
-| 钻石 | $AXON 大户 / 节点 | 50,000 USDT |
-
-额度上限的存在，源于「营销预算 + 量化策略容量」的真实上限（[E.4.1](e4-reserve-risk.md)），而非人为稀缺。
+**额度上限**：每个跟单会话密钥设有单场额度 $L_{\text{tx}}$ 与累计上限 $L_{\text{total}}$，**由治理设定**（映射为会话密钥 scope 的 $L_{\text{tx}}$）。额度上限的存在，源于「营销预算 + 量化策略容量」的真实上限（[E.4.1](e4-reserve-risk.md)），而非人为稀缺。
 
 ## E.3.7 本节机制映射
 
@@ -151,7 +143,7 @@ $$P_{\text{copy}} = \big(\, L_{\text{tx}} = \text{单场额度},\ L_{\text{total
 | 零 Gas 跟单 | Paymaster 代付 | [C.3](c3-policy-paymaster.md) |
 | 保底兜底 / 覆盖率熔断 | 准备金池 + 违约瀑布 | [E.4](e4-reserve-risk.md) |
 
-带单引擎不重造任何底层机制——它证明了 AXON 地基（结算、预言机、账户抽象）的**可组合性**：一个面向真实用户的旗舰产品，可以完全用既有原语拼装而成。
+带单引擎不重造任何底层机制——它证明了 AXON 地基（结算、预言机、账户抽象）的**可组合性**：一个面向真实用户的开放生态，可以完全用既有原语拼装而成。
 
 ---
 

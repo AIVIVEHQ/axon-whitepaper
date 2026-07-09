@@ -1,13 +1,13 @@
 ---
 title: E.3 The US-Equity Copy-Trading Engine
-description: The protocol mechanics of the first flagship PayFi product—escrow, settlement proofs, and authorization
+description: The protocol mechanics of the first open ecosystem—escrow, settlement proofs, and authorization
 ---
 
 # E.3 The US-Equity Copy-Trading Engine
 
-> **Design status**: proposed design (a protocol design model). The escrow, settlement-proof, and authorization mechanisms are design proposals; the product thresholds (guaranteed floor rate 1%–3%, tier quotas, settlement window 2–24h) are finalized product parameters, while unspecified internal protocol parameters (hedge ratio, challenge-window length, injection rate) are marked `TBD / set by governance`. For the business-side mechanism in the whitepaper, see [4.5 The US-Equity Copy-Trading Engine](../part4-payfi/4-5-copy-trading-engine.md); for reserve and risk control, see [E.4](e4-reserve-risk.md).
+> **Design status**: proposed design (a protocol design model). The escrow, settlement-proof, and authorization mechanisms are design proposals; the product thresholds (guaranteed floor rate 1%–3%, settlement window 2–24h) are finalized product parameters, while unspecified internal protocol parameters (hedge ratio, challenge-window length, injection rate) are marked `TBD / set by governance`. For the business-side mechanism in the whitepaper, see [4.5 The US-Equity Copy-Trading Engine](../part4-payfi/4-5-copy-trading-engine.md); for reserve and risk control, see [E.4](e4-reserve-risk.md).
 
-The US-equity copy-trading engine is AXON L1's **first major flagship PayFi product**. This section deepens its product mechanism to protocol-specification level: it is **not a standalone new on-chain system**, but an assembly of existing settlement primitives ([D.1](d1-settlement.md)), the oracle ([D.2](d2-oracle.md)), and account abstraction and authorization ([C.1](c1-account-abstraction.md)–[C.3](c3-policy-paymaster.md)) into a "deterministic PayFi yield" product. Its externally stated deterministic yield is backstopped at the protocol layer by the reserve and risk control of [E.4](e4-reserve-risk.md).
+The US-equity copy-trading engine is AXON L1's **first open ecosystem**. This section deepens its mechanism to protocol-specification level: it is **not a standalone new on-chain system**, but an assembly of existing settlement primitives ([D.1](d1-settlement.md)), the oracle ([D.2](d2-oracle.md)), and account abstraction and authorization ([C.1](c1-account-abstraction.md)–[C.3](c3-policy-paymaster.md)) into a "deterministic PayFi yield" scenario. Its externally stated deterministic yield is backstopped at the protocol layer by the reserve and risk control of [E.4](e4-reserve-risk.md).
 
 ## E.3.1 Goal and Design Boundary
 
@@ -45,9 +45,9 @@ Proprietary losses of the quant desk **may not draw on** $A_u$; the backstop for
 
 An "official copy-trading round" is an on-chain registered `RoundSpec` (see [Appendix III](appendix-datastructures.md) for the data structure):
 
-$$\rho = \big(\, \text{asset},\ t_{\text{cat}},\ g,\ \text{Cap},\ \text{tier}_{\min},\ [\,t_{\text{open}}, t_{\text{settle}}\,] \,\big)$$
+$$\rho = \big(\, \text{asset},\ t_{\text{cat}},\ g,\ \text{Cap},\ [\,t_{\text{open}}, t_{\text{settle}}\,] \,\big)$$
 
-where $t_{\text{cat}}$ is the deterministic-catalyst timestamp, $g \in [1\%, 3\%]$ is the guaranteed floor rate, $\text{Cap}$ is the per-round total copy-trade cap, $\text{tier}_{\min}$ is the minimum participation tier, and the settlement window $t_{\text{settle}} - t_{\text{open}} \in [2, 24]\,\text{h}$.
+where $t_{\text{cat}}$ is the deterministic-catalyst timestamp, $g \in [1\%, 3\%]$ is the guaranteed floor rate, $\text{Cap}$ is the per-round total copy-trade cap, and the settlement window $t_{\text{settle}} - t_{\text{open}} \in [2, 24]\,\text{h}$.
 
 Round registration must pass the **admission predicate** $\text{Admit}(\rho)$—the protocol recognizes only rounds satisfying the following four conditions as "official copy-trading", excluding low-quality underlyings and one-sided naked bets at the source:
 
@@ -124,21 +124,13 @@ After the split, users can withdraw instantly (experiencing AXON's sub-second fi
 
 Copy-trading is a direct application of **bounded authorization** ([C.2](c2-session-keys.md)): the user grants a **copy-trading session key**, whose policy $P_{\text{copy}}$ precisely constrains permissions to just the one thing "copy-trading":
 
-$$P_{\text{copy}} = \big(\, L_{\text{tx}} = \text{per-round quota},\ L_{\text{total}} = \text{cumulative tier cap},\ W = \{\text{escrow account},\ \text{settlement contract}\},\ F = \{\text{copy-trade},\ \text{redeem}\},\ \rho_{\text{rate}} \,\big)$$
+$$P_{\text{copy}} = \big(\, L_{\text{tx}} = \text{per-round quota},\ L_{\text{total}} = \text{cumulative cap},\ W = \{\text{escrow account},\ \text{settlement contract}\},\ F = \{\text{copy-trade},\ \text{redeem}\},\ \rho_{\text{rate}} \,\big)$$
 
 The authorization predicate $\text{Auth}_{P_{\text{copy}}}$ directly reuses the conjunction decision of [C.2](c2-session-keys.md)—any unsatisfied constraint rejects that transaction, while the key stays valid. The three security properties are thereby inherited: **bounded** (the copy-trade quota is capped), **directed** (funds can only enter the escrow/settlement contracts, nowhere else), and **revocable** (a user's one-click exit = `Revoke(session_id)`, effective within a single block).
 
 **Zero-gas**: the prediction platform acts as Paymaster ([C.3](c3-policy-paymaster.md)) to sponsor the gas of copy-trade transactions—the user operates entirely within stablecoin semantics without ever perceiving gas, and `resolve_paymaster`'s deposit and quota mechanisms prevent the sponsorship from being drained.
 
-**Tier quotas**: a user's on-chain interaction depth determines their per-round quota cap $L_{\text{tx}}$, mapped to the $L_{\text{tx}}$ of the session key's scope (the values are finalized product parameters):
-
-| Tier | Participation threshold | Per-round quota $L_{\text{tx}}$ |
-| --- | --- | --- |
-| Silver | Regular prediction-platform user | 1,000 USDT |
-| Gold | Active AXON interactor | 10,000 USDT |
-| Diamond | $AXON whale / node | 50,000 USDT |
-
-The existence of the quota cap stems from the real ceiling of "acquisition budget + quant-strategy capacity" ([E.4.1](e4-reserve-risk.md)), not from artificial scarcity.
+**Quota caps**: each copy-trading session key has a per-round quota $L_{\text{tx}}$ and a cumulative cap $L_{\text{total}}$, **set by governance** (mapped to the $L_{\text{tx}}$ of the session key's scope). The existence of the quota cap stems from the real ceiling of "acquisition budget + quant-strategy capacity" ([E.4.1](e4-reserve-risk.md)), not from artificial scarcity.
 
 ## E.3.7 Mechanism Mapping for This Section
 
@@ -151,7 +143,7 @@ The existence of the quota cap stems from the real ceiling of "acquisition budge
 | Zero-gas copy-trading | Paymaster sponsorship | [C.3](c3-policy-paymaster.md) |
 | Floor backstop / coverage circuit-breaker | reserve pool + default waterfall | [E.4](e4-reserve-risk.md) |
 
-The copy-trading engine rebuilds no underlying mechanism—it proves the **composability** of the AXON foundation (settlement, oracle, account abstraction): a flagship product for real users can be assembled entirely from existing primitives.
+The copy-trading engine rebuilds no underlying mechanism—it proves the **composability** of the AXON foundation (settlement, oracle, account abstraction): an open ecosystem for real users can be assembled entirely from existing primitives.
 
 ---
 

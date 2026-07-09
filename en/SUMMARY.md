@@ -37,7 +37,7 @@
   * [4.2 PayFi Money Market: Float & On-Chain Credit](part4-payfi/4-2-money-market.md)
   * [4.3 Cross-Border B2B & Merchant Acquiring](part4-payfi/4-3-crossborder-b2b.md)
   * [4.4 The Finance of the Time Value of Money](part4-payfi/4-4-time-value-of-money.md)
-  * [4.5 The US-Equity Copy-Trading Engine: First PayFi Flagship](part4-payfi/4-5-copy-trading-engine.md)
+  * [4.5 The US-Equity Copy-Trading Engine: First Open Ecosystem](part4-payfi/4-5-copy-trading-engine.md)
 
 ## Part V · AI-Native
 

@@ -48,7 +48,7 @@ This whitepaper is organized into seven parts, moving from vision all the way to
 * **Part I · Vision & Positioning** — the "foundation & wedge" core thesis, AXON's two-layer narrative, and design philosophy.
 * **Part II · Market & Opportunity** — stablecoin monetization, the origins of PayFi, cross-border pain, and the AI-agent economy: how four trends converge into a whitespace.
 * **Part III · Technical Architecture** — why a purpose-built L1, the five-layer architecture, consensus and performance targets, payment determinism, oracle safety, the compliance gateway, and account abstraction.
-* **Part IV · The PayFi Engine** — four scenarios stacking value, plus the first flagship product to land: the **US-equity copy-trading engine**.
+* **Part IV · The PayFi Engine** — four scenarios stacking value, plus the first open ecosystem: the **US-equity copy-trading engine**.
 * **Part V · AI-Native** — the real problem of agentic payments, controlled payment execution, x402 & M2M, and our honest positioning for AI.
 * **Part VI · Roadmap & Governance** — the P0 → P3+ stage progression, governance framework, team & resource network, and the Season 1 ecosystem open program.
 * **Part VII · Tokenomics** — 10B total supply, six-bucket allocation, vesting and circulating-supply curve, token utility, and the deflationary flywheel.

@@ -101,7 +101,7 @@ These are **enforced by the chain**, not dependent on the agent's own honesty or
 
 Session keys are the authorization foundation for x402 (HTTP 402 pay-per-call) and M2M micropayments: within its session bounds, an agent initiates a constrained on-chain micropayment for each service call (whitepaper [5.3](../part5-ai/5-3-x402-m2m.md)). $c_{\text{rate}}$ prevents runaway loops from burning funds, $c_{\text{cap}}$ caps total risk, and $c_{\text{allow}}$ restricts the service counterparties—the security of machine payments thus shifts from "trust the agent" to "trust the constraints".
 
-The same model is also used for **one-click copy-trading with a session key** ([E.3.6](e3-copy-trading.md)): the copy-trading session key's $L_{\text{tx}}$ corresponds to the per-round quota, $L_{\text{total}}$ to the cumulative tier cap, and $c_{\text{allow}}$ restricts funds to only enter the escrow/settlement contracts—authorization for human users shares the same bounded, directed, revocable predicates as authorization for AI agents.
+The same model is also used for **one-click copy-trading with a session key** ([E.3.6](e3-copy-trading.md)): the copy-trading session key's $L_{\text{tx}}$ corresponds to the per-round quota, $L_{\text{total}}$ to the cumulative cap, and $c_{\text{allow}}$ restricts funds to only enter the escrow/settlement contracts—authorization for human users shares the same bounded, directed, revocable predicates as authorization for AI agents.
 
 ---
 

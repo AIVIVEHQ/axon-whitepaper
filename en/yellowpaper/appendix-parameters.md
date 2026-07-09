@@ -81,7 +81,7 @@ The key protocol parameters used throughout are consolidated here, each annotate
 | --- | --- | --- |
 | Guaranteed floor $g$ | $1\%\sim3\%$ / round | `finalized product parameter` |
 | Coverage floor $\Xi_{\min}$ | $\geq 150\%$ | `finalized product parameter` |
-| Per-round tier limit $L_{\text{tx}}$ | Silver 1,000 / Gold 10,000 / Diamond 50,000 USDT | `finalized product parameter` |
+| Per-round limit $L_{\text{tx}}$ | governance-set / per-round | `design` |
 | Settlement window $t_{\text{settle}}-t_{\text{open}}$ | $2\sim24$ h | `finalized product parameter` |
 | Reserve injection rate $\phi_{ct}$ | governance-set | `TBD` |
 | Post-hedge max loss ratio $\chi$ | governance-set (determined by the options portfolio) | `TBD` |

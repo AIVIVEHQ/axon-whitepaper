@@ -104,7 +104,6 @@ CopyRound := {                        // official copy-trading round (E.3.3)
   t_cat      : u64                    // deterministic catalyst timestamp
   g          : Ratio                  // guaranteed floor ∈ [1%,3%] (E.3.5)
   cap        : u128                   // total per-round copy-trade cap
-  tier_min   : u8                     // minimum participation tier (Silver/Gold/Diamond)
   window     : (t_open: u64, t_settle: u64)   // settlement window 2–24h
   state      : Open | Locked | Settling | Settled | Aborted | Refunded  // E.3.4
   max_loss   : u128                   // max possible post-hedge loss χ·P (E.4.2)

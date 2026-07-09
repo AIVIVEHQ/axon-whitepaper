@@ -13,7 +13,7 @@ AXON's roadmap divides into four stages, mapping to the three-phase evolutionary
 timeline
     title AXON Finance Roadmap (stage-driven, no date commitments)
     P0 · Testnet : L1 core (high-throughput consensus / sub-second finality / low fees) : Stablecoin settlement primitives + account abstraction : Mock payments / settlement correctness · chaos / sequence replay : Target: eliminate "miscounting money / double-spends / exploitability"
-    P1 · Mainnet Beta (MVP→PMF) : Stablecoin instant-settlement rail : US-equity copy-trading engine (first flagship PayFi product) · empowering the prediction-platform ecosystem : 1–2 PayFi scenarios (cross-border remittance / merchant acquiring) : AI agent payment SDK (session keys) + fee sponsorship : KYC plugin + first payment / market-making partners : Network & ecosystem launch
+    P1 · Mainnet Beta (MVP→PMF) : Stablecoin instant-settlement rail : US-equity copy-trading engine (first open ecosystem) · empowering the prediction-platform ecosystem : 1–2 PayFi scenarios (cross-border remittance / merchant acquiring) : AI agent payment SDK (session keys) + fee sponsorship : KYC plugin + first payment / market-making partners : Network & ecosystem launch
     P2 · Scale / PayFi Network : PayFi money market / float yield / on-chain credit : x402 / M2M micro-payments at scale : More stablecoins and fiat rails : Validator expansion and decentralized governance takeover
     P3+ · Vision (TradFi expansion) : Reuse the validated funds / clearing rail : Tokenization of US equities / commodities : TradFi on-chain trading : Grow the payment network into a global asset network
 ```
@@ -33,7 +33,7 @@ This is of a piece with [3.4 Payment Finality](../part3-architecture/3-4-payment
 The second stage cashes the foundation into a usable product, with the goal of moving from minimum viable (MVP) to product-market fit (PMF):
 
 * **Stablecoin instant-settlement rail** goes live ([4.1](../part4-payfi/4-1-settlement-rail.md));
-* **US-equity copy-trading engine** goes live — AXON's **first flagship PayFi product**, empowering the ecosystem of prediction platforms such as Polymarket, Kalshi, and Kairos, using deterministic stablecoin yield to convert external traffic into real TVL and addresses ([4.5](../part4-payfi/4-5-copy-trading-engine.md));
+* **US-equity copy-trading engine** goes live — AXON's **first open ecosystem**, empowering the ecosystem of prediction platforms such as Polymarket, Kalshi, and Kairos, using deterministic stablecoin yield to convert external traffic into real TVL and addresses ([4.5](../part4-payfi/4-5-copy-trading-engine.md));
 * **1–2 PayFi scenarios** land (cross-border remittance / merchant acquiring, [4.3](../part4-payfi/4-3-crossborder-b2b.md));
 * **AI agent payment SDK** (session keys) + fee sponsorship ([5.2](../part5-ai/5-2-controlled-execution.md), [3.7](../part3-architecture/3-7-account-abstraction.md));
 * **KYC plugin** + first payment / market-making partners;
@@ -41,7 +41,7 @@ The second stage cashes the foundation into a usable product, with the goal of m
 
 **Exit value**: a PayFi mainnet with real users and real payment flow.
 
-> **Product priority**: the copy-trading engine is AXON's **first GTM wedge product** in the PayFi direction — rather than rolling out every scenario at once, it first proves out the "foundation-first, product-wedge" strategy through a single incision whose traffic, yield, and closed loop can all be truly validated. Logically it lands in P1 (the first flagship launch) and scales up in P2 as the PayFi network grows.
+> **Product priority**: the copy-trading engine is AXON's **first open ecosystem (a GTM wedge)** in the PayFi direction — rather than rolling out every scenario at once, it first proves out the "foundation-first, product-wedge" strategy through a single incision whose traffic, yield, and closed loop can all be truly validated. Logically it lands in P1 (the first open-ecosystem launch) and scales up in P2 as the PayFi network grows.
 
 ### P2 · Scale / PayFi Network — opening the engine fully
 

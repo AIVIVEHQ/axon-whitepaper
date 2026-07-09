@@ -46,7 +46,7 @@ AXON's protocol design centers on a single core proposition: **provide determini
 * **B · Consensus & Ledger** — BFT PoS consensus, validators, state model, sequencing layer, payment finality.
 * **C · Account Abstraction & AI Authorization** — native account abstraction, session-key authorization model, policy sandbox and Paymaster.
 * **D · Settlement · Price Feeds · Compliance** — stablecoin settlement engine, oracle safety, pluggable compliance gateway.
-* **E · PayFi Protocol Mechanisms** — on-chain money market, credit risk control and liquidation, the US-equity copy-trading engine (the first PayFi flagship product) and its reserve risk control.
+* **E · PayFi Protocol Mechanisms** — on-chain money market, credit risk control and liquidation, the US-equity copy-trading engine (the first open ecosystem) and its reserve risk control.
 * **F · Protocol Economics & Security** — gas and fee market, staking and slashing, security and threat model.
 * **G · Networking & Performance** — P2P networking layer, performance model and derivation of design targets.
 * **Appendix** — notation table, protocol parameter table, core data-structure definitions.

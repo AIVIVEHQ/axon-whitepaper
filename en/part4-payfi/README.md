@@ -17,7 +17,7 @@ flowchart TB
     S --> X["③ Cross-Border B2B & Merchant Acquiring<br/>reaches real-world commerce"]
     M --> V["Source of excess yield"]
     X --> V
-    M --> C["④ US-Equity Copy-Trading Engine<br/>first flagship product to land"]
+    M --> C["④ US-Equity Copy-Trading Engine<br/>first open ecosystem"]
     style S fill:#f5541c,stroke:#0a0908,color:#fff
     style M fill:#ff8a3d,stroke:#0a0908,color:#0a0908
     style X fill:#ff8a3d,stroke:#0a0908,color:#0a0908
@@ -30,4 +30,4 @@ The chapter map for this part:
 * **4.2** PayFi Money Market — float and on-chain credit, PayFi's source of excess yield.
 * **4.3** Cross-Border B2B & Merchant Acquiring — bringing PayFi to real-world commerce.
 * **4.4** The Finance of the Time Value of Money — the financial first principle underpinning it all.
-* **4.5** The US-Equity Copy-Trading Engine — the first PayFi flagship to land, turning the above capabilities into a product.
+* **4.5** The US-Equity Copy-Trading Engine — AXON's first open ecosystem, turning the above foundation into a market-facing landing scenario.

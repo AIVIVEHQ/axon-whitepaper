@@ -41,7 +41,7 @@ AXON Finance is backed by top-tier institutions spanning crypto-native capital, 
 | **Paradigm** | Top-tier crypto-native VC · technical and protocol backing |
 | **ConsenSys** | Ethereum core infrastructure · Web3 ecosystem |
 | **Chainlink** | Oracle · on-chain data / price feeds |
-| **Animoca Brands** | Web3 / digital-asset and ecosystem investment |
+| **Infinite Alliance** | Web3 ecosystem / strategic investment |
 | **UZ Capital** | Strategic capital |
 
 This network is designed to match a PayFi L1's needs across different dimensions:
@@ -49,7 +49,7 @@ This network is designed to match a PayFi L1's needs across different dimensions
 * **Technical and protocol backing** (Paradigm) — providing crypto-native technical judgment and long-term resources for an L1 built from the foundation up;
 * **Ethereum infrastructure and Web3 ecosystem** (ConsenSys) — providing access for cross-chain interoperability and the developer ecosystem;
 * **Oracle and on-chain data** (Chainlink) — supporting the high-quality price sources required by [3.5 Oracle Safety](../part3-architecture/3-5-oracle-safety.md);
-* **Web3 ecosystem and digital-asset investment** (Animoca Brands) — providing resources for ecosystem expansion and application landing;
+* **Web3 ecosystem and strategic investment** (Infinite Alliance) — providing resources for ecosystem expansion and application landing;
 * **Strategic capital** (UZ Capital) — providing capital support for long-term building.
 
 ## A team assembled for "honesty"

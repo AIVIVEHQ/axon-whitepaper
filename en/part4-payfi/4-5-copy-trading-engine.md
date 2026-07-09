@@ -1,13 +1,13 @@
 ---
-title: 4.5 The US-Equity Copy-Trading Engine: First PayFi Flagship
+title: 4.5 The US-Equity Copy-Trading Engine: First Open Ecosystem
 description: Using deterministic stablecoin yield to convert external traffic into the L1's real TVL and addresses
 ---
 
-# 4.5 The US-Equity Copy-Trading Engine: First PayFi Flagship
+# 4.5 The US-Equity Copy-Trading Engine: First Open Ecosystem
 
-The previous four sections laid out PayFi's foundation scenarios (the settlement rail, the money market, cross-border acquiring, time value). This section covers **the first product that turns these capabilities into real business** — the **AXON US-Equity Copy-Trading Engine.**
+The previous four sections laid out PayFi's foundation scenarios (the settlement rail, the money market, cross-border acquiring, time value). This section covers **the first open ecosystem that turns these capabilities into real business** — the **AXON US-Equity Copy-Trading Engine.**
 
-Along the "float + on-chain credit" direction described in [4.2 PayFi Money Market](4-2-money-market.md), the copy-trading engine is AXON Finance's **first flagship PayFi product to land.** It does not try to blanket every scenario from the outset; instead it picks one wedge where **traffic, yield, and the closed loop can all be really validated** and gets it working first: its core mission is to drive explosive growth in the L1's TVL and real address count by providing deterministic stablecoin yield to external traffic.
+Along the "float + on-chain credit" direction described in [4.2 PayFi Money Market](4-2-money-market.md), the copy-trading engine is AXON Finance's **first open ecosystem** — AXON provides the L1 settlement and account-abstraction infrastructure, while prediction platforms and a Silicon-Valley quant desk participate as ecosystem members (AXON is infrastructure, not the product operator). It does not try to blanket every scenario from the outset; instead it picks one wedge where **traffic, yield, and the closed loop can all be really validated** and gets it working first: its core mission is to drive explosive growth in the L1's TVL and real address count by providing deterministic stablecoin yield to external traffic.
 
 ## Strategic Enablement: The Traffic-Swap Model
 

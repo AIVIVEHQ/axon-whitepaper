@@ -104,7 +104,6 @@ CopyRound := {                        // 官方带单场次（E.3.3）
   t_cat      : u64                    // 确定性催化剂时点
   g          : Ratio                  // 保底率 ∈ [1%,3%]（E.3.5）
   cap        : u128                   // 单场跟单总额上限
-  tier_min   : u8                     // 最低参与等级（银/金/钻）
   window     : (t_open: u64, t_settle: u64)   // 结算窗口 2–24h
   state      : Open | Locked | Settling | Settled | Aborted | Refunded  // E.3.4
   max_loss   : u128                   // 对冲后最大可能损失 χ·P（E.4.2）
