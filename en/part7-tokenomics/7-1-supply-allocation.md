@@ -1,6 +1,6 @@
 ---
 title: 7.1 Supply & Allocation
-description: 10B total supply and the six-bucket allocation framework
+description: 1B total supply and the six-bucket allocation framework
 ---
 
 # 7.1 Supply & Allocation
@@ -10,30 +10,28 @@ description: 10B total supply and the six-bucket allocation framework
 | Parameter | Value |
 | --- | --- |
 | Token symbol | **AXON** |
-| Total supply | **10 billion** (10,000,000,000) |
-| Initial price | **$0.01** |
-| Initial FDV | **$100M** |
-| TGE float | **4%** (400M) |
+| Total supply | **1 billion** (1,000,000,000) |
+| TGE float | **4%** (40M) |
 | Value capture | Fee revenue buys back and burns (see [7.3](7-3-utility-flywheel.md)) |
 
-AXON adopts a fixed total supply of 10 billion, with an initial price of $0.01, implying an FDV of $100M. At TGE (Token Generation Event), only **4%** is released into circulation, with the rest released linearly per each bucket's vesting rules (see [7.2 Vesting & Circulating Supply](7-2-vesting-circulation.md)).
+AXON adopts a fixed total supply of 1 billion (initial price and FDV are not disclosed at this time). At TGE (Token Generation Event), only **4%** is released into circulation, with the rest released linearly per each bucket's vesting rules (see [7.2 Vesting & Circulating Supply](7-2-vesting-circulation.md)).
 
 ## The six-bucket allocation
 
-The 10 billion total is allocated across six buckets, summing to 100%:
+The 1 billion total is allocated across six buckets, summing to 100%:
 
 | Bucket | Share | Amount | Vesting |
 | --- | --- | --- | --- |
-| **Ecosystem** | **50%** | 5B | TGE 3% + 60-month linear (governance-controlled) |
-| **Team & Advisors** | **12%** | 1.2B | 1-year lock + 3-year linear |
-| **Angel** | **10%** | 1B | 2-year lock + 3-year linear (5 years total) |
-| **Strategic (private)** | **10%** | 1B | 12-month cliff + 24-month linear |
-| **Airdrop** | **10%** | 1B | TGE 25% + quarterly linear (anti-sybil) |
-| **Liquidity / Market-Making** | **8%** | 800M | 6-month lock, listing liquidity / market-making reserve |
+| **Ecosystem** | **50%** | 500M | TGE 3% + 60-month linear (governance-controlled) |
+| **Team & Advisors** | **12%** | 120M | 1-year lock + 3-year linear |
+| **Angel** | **10%** | 100M | 2-year lock + 3-year linear (5 years total) |
+| **Strategic (private)** | **10%** | 100M | 12-month cliff + 24-month linear |
+| **Airdrop** | **10%** | 100M | TGE 25% + quarterly linear (anti-sybil) |
+| **Liquidity / Market-Making** | **8%** | 80M | 6-month lock, listing liquidity / market-making reserve |
 
 ```mermaid
 pie showData
-    title AXON Allocation (10B total)
+    title AXON Allocation (1B total)
     "Ecosystem 50%" : 50
     "Team & Advisors 12%" : 12
     "Angel 10%" : 10

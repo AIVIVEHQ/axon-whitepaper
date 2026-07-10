@@ -52,7 +52,7 @@ description: 性能设计目标与待定参数的集中列表
 | 合规注册法域 / 牌照路径 | `待定(TBD)` | 加密友好辖区，分阶段推进（[3.6](../part3-architecture/3-6-compliance-gateway.md)） |
 | 法币出入金伙伴 | `设计中` | 随主网推进接入（[4.3](../part4-payfi/4-3-crossborder-b2b.md)） |
 | 治理经济参数（质押 / 投票权重等） | `设计` | 属代币经济，见 [Part VII · 代币经济](../part7-tokenomics/README.md) |
-| 代币经济（供应 / 分配 / 流通 / 融资） | — | 见 [Part VII · 代币经济](../part7-tokenomics/README.md)（总量 100 亿 / 六桶分配 / vesting / 流通曲线 / 通缩飞轮） |
+| 代币经济（供应 / 分配 / 流通 / 融资） | — | 见 [Part VII · 代币经济](../part7-tokenomics/README.md)（总量 10 亿 / 六桶分配 / vesting / 流通曲线 / 通缩飞轮） |
 
 ## 市场数据（行业背景）
 

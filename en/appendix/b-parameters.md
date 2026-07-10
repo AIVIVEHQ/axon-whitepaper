@@ -52,7 +52,7 @@ This appendix consolidates the key parameters that appear throughout the book, a
 | Compliance registration jurisdiction / licensing path | `TBD` | Crypto-friendly jurisdictions, phased rollout ([3.6](../part3-architecture/3-6-compliance-gateway.md)) |
 | Fiat on/off-ramp partners | `in design` | Integrated as mainnet progresses ([4.3](../part4-payfi/4-3-crossborder-b2b.md)) |
 | Governance economic parameters (staking / voting weight, etc.) | `design` | Part of token economics; see [Part VII · Tokenomics](../part7-tokenomics/README.md) |
-| Token economics (supply / allocation / circulation / financing) | — | See [Part VII · Tokenomics](../part7-tokenomics/README.md) (10B total / six-bucket allocation / vesting / circulation curve / deflationary flywheel) |
+| Token economics (supply / allocation / circulation / financing) | — | See [Part VII · Tokenomics](../part7-tokenomics/README.md) (1B total / six-bucket allocation / vesting / circulation curve / deflationary flywheel) |
 
 ## Market Data (Industry Context)
 

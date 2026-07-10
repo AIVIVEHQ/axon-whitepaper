@@ -22,7 +22,7 @@ The core intent of this design is to **bind the interests of early capital and t
 
 ## The 60-month circulating curve
 
-TGE has a low float of **4%** (400M), after which release proceeds linearly per each bucket's vesting rules, reaching ≈ **100%** by month 60. Key milestones:
+TGE has a low float of **4%** (40M), after which release proceeds linearly per each bucket's vesting rules, reaching ≈ **100%** by month 60. Key milestones:
 
 | Time | Cumulative circulating share |
 | --- | --- |

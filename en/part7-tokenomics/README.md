@@ -13,8 +13,8 @@ AXON's answer is one sentence: **not from inflationary subsidies, but from real 
 
 Chapter map for this part:
 
-* **7.1** Supply & Allocation — 10B total supply, a six-bucket allocation framework.
+* **7.1** Supply & Allocation — 1B total supply, a six-bucket allocation framework.
 * **7.2** Vesting & Circulating Supply — each bucket's vesting and the 60-month circulating-release cadence.
 * **7.3** Token Utility & the Deflationary Flywheel — AXON's six utilities, and the "revenue is deflation" value-capture flywheel.
 
-> **Scope note**: this part's token base parameters (total supply / initial price / FDV / TGE float / six-bucket allocation / vesting) follow the strategic-data source of truth and are finalized data. **The Ecosystem bucket (50%) is disclosed as a single aggregate bucket**; the finer breakdown of its internal uses and the more granular release schedule will be disclosed separately at TGE / exchange listing. For the scope of the fundraising rounds, see [7.1](7-1-supply-allocation.md): each round is a fixed subscription price, with no promise of secondary-market price or returns.
+> **Scope note**: this part's token base parameters (total supply / TGE float / six-bucket allocation / vesting) follow the strategic-data source of truth; **initial price and FDV are not disclosed at this time**. **The Ecosystem bucket (50%) is disclosed as a single aggregate bucket**; the finer breakdown of its internal uses and the more granular release schedule will be disclosed separately at TGE / exchange listing. For the scope of the fundraising rounds, see [7.1](7-1-supply-allocation.md): each round is a fixed subscription price, with no promise of secondary-market price or returns.

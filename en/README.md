@@ -37,7 +37,7 @@ Longer term, atop a payment and settlement rail proven by real business, AXON wi
 | PayFi leader Huma, cumulative volume | **$10B+** | Crossed $10B in Feb 2026, YoY 3.4× ($2.9B → $10B) |
 | Global cross-border payment flow (TAM) | **$190T+** | B2B is ~60% of stablecoin cross-border flow |
 | Target network throughput | **>10,000 TPS** | Payment-grade sustained throughput (Design Target) |
-| AXON total supply | **10B** | $0.01 init · FDV $100M · TGE float 4% (see Part VII) |
+| AXON total supply | **1B** | TGE float 4% · price / FDV undisclosed (see Part VII) |
 
 ---
 
@@ -51,7 +51,7 @@ This whitepaper is organized into seven parts, moving from vision all the way to
 * **Part IV · The PayFi Engine** — four scenarios stacking value, plus the first open ecosystem: the **US-equity copy-trading engine**.
 * **Part V · AI-Native** — the real problem of agentic payments, controlled payment execution, x402 & M2M, and our honest positioning for AI.
 * **Part VI · Roadmap & Governance** — the P0 → P3+ stage progression, governance framework, team & resource network, and the Season 1 ecosystem open program.
-* **Part VII · Tokenomics** — 10B total supply, six-bucket allocation, vesting and circulating-supply curve, token utility, and the deflationary flywheel.
+* **Part VII · Tokenomics** — 1B total supply, six-bucket allocation, vesting and circulating-supply curve, token utility, and the deflationary flywheel.
 * **Appendix** — glossary, parameter summary, brand guidelines, and data sources.
 
 ---
