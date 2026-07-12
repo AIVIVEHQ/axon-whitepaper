@@ -1,5 +1,5 @@
 ---
-title: 4.5 The US-Equity Copy-Trading Engine: First Open Ecosystem
+title: "4.5 The US-Equity Copy-Trading Engine: First Open Ecosystem"
 description: Using deterministic stablecoin yield to convert external traffic into the L1's real TVL and addresses
 ---
 

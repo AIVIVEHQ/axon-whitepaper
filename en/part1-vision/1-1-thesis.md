@@ -1,5 +1,5 @@
 ---
-title: 1.1 Core Thesis: The L1 Is the Foundation, PayFi Is the Wedge
+title: "1.1 Core Thesis: The L1 Is the Foundation, PayFi Is the Wedge"
 description: AXON's two-layer strategy and wedge logic
 ---
 

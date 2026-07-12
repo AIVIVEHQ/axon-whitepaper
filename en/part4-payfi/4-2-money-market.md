@@ -1,5 +1,5 @@
 ---
-title: 4.2 PayFi Money Market: Float & On-Chain Credit
+title: "4.2 PayFi Money Market: Float & On-Chain Credit"
 description: PayFi's source of excess yield
 ---
 

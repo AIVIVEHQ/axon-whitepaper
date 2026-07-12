@@ -1,5 +1,5 @@
 ---
-title: 1.2 What Is AXON Finance: The Two-Layer Narrative
+title: "1.2 What Is AXON Finance: The Two-Layer Narrative"
 description: The full picture of a high-performance, AI-native PayFi blockchain
 ---
 

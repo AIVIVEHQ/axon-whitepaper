@@ -1,5 +1,5 @@
 ---
-title: 3.5 Stablecoins & Price Feeds: Multi-Source Validation and Circuit Breakers
+title: "3.5 Stablecoins & Price Feeds: Multi-Source Validation and Circuit Breakers"
 description: Preventing feed anomalies from triggering cascading liquidations
 ---
 
