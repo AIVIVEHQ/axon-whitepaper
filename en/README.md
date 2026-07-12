@@ -3,8 +3,6 @@ title: AXON Finance Whitepaper
 description: The high-performance, AI-native PayFi L1
 ---
 
-> 🌐 **English** · [中文版](../README.md)
-
 # AXON Finance Whitepaper
 
 > **The high-performance, AI-native PayFi L1**

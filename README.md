@@ -3,8 +3,6 @@ title: AXON Finance 白皮书
 description: 高性能 · AI 原生的 PayFi 公链
 ---
 
-> 🌐 **中文** · [English](en/README.md)
-
 # AXON Finance 白皮书
 
 > **高性能 · AI 原生的 PayFi 公链**
