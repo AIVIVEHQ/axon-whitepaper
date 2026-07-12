@@ -11,7 +11,7 @@ At TGE only a very small portion is released; the rest unlocks per each bucket's
 
 | Bucket | Vesting rule |
 | --- | --- |
-| Ecosystem | TGE 3% + 60-month linear (governance-controlled) |
+| Ecosystem | Multi-domain ecosystem unlocks, multi-chain weighted allocation |
 | Team & Advisors | 1-year lock + 3-year linear |
 | Angel | 2-year lock + 3-year linear (5 years total) |
 | Strategic (private) | 12-month cliff + 24-month linear |

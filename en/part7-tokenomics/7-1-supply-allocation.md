@@ -21,7 +21,7 @@ The 1 billion total is allocated across six buckets, summing to 100%:
 
 | Bucket | Share | Amount | Vesting |
 | --- | --- | --- | --- |
-| **Ecosystem** | **40%** | 400M | TGE 3% + 60-month linear (governance-controlled) |
+| **Ecosystem** | **40%** | 400M | Multi-domain ecosystem unlocks, multi-chain weighted allocation |
 | **Team & Advisors** | **12%** | 120M | 1-year lock + 3-year linear |
 | **Angel** | **10%** | 100M | 2-year lock + 3-year linear (5 years total) |
 | **Strategic (private)** | **10%** | 100M | 12-month cliff + 24-month linear |
