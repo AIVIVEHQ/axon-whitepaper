@@ -37,7 +37,7 @@ Longer term, atop a payment and settlement rail proven by real business, AXON wi
 | PayFi leader Huma, cumulative volume | **$10B+** | Crossed $10B in Feb 2026, YoY 3.4× ($2.9B → $10B) |
 | Global cross-border payment flow (TAM) | **$190T+** | B2B is ~60% of stablecoin cross-border flow |
 | Target network throughput | **>10,000 TPS** | Payment-grade sustained throughput (Design Target) |
-| AXON total supply | **1B** | TGE float 4% · price / FDV undisclosed (see Part VII) |
+| AXON total supply | **1B** | Price / FDV / TGE float not disclosed (see Part VII) |
 
 ---
 

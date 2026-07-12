@@ -22,7 +22,7 @@ The **Season 1 · Ecosystem Open Program** is the launch ceremony of the AXON ec
 Season 1 drives the ecosystem cold-start through **token incentives**, achieving a win-win for both sides:
 
 * The program provides **token rewards** to participating project teams, incentivizing them to bring real business and traffic to AXON and jointly grow the L1 ecosystem;
-* These incentives come from the **Ecosystem bucket (50%)** of the [token allocation](../part7-tokenomics/7-1-supply-allocation.md) — its ecosystem fund and liquidity incentives are exactly the ammunition prepared for this kind of ecosystem building;
+* These incentives come from the **Ecosystem bucket (40%)** of the [token allocation](../part7-tokenomics/7-1-supply-allocation.md) — its ecosystem fund and liquidity incentives are exactly the ammunition prepared for this kind of ecosystem building;
 * **Win-win** — project teams gain launch-phase token incentives and a high-performance PayFi foundation, while AXON gains real TVL, addresses, and business volume, feeding back into the value capture of the [7.3 Deflationary Flywheel](../part7-tokenomics/7-3-utility-flywheel.md).
 
 The Ecosystem Open Program is not a one-off airdrop of scattered cash, but a conversion of "customer-acquisition budget" into "ecosystem-building investment" — **what the token incentives buy is the onboarding of real business, not traffic that farms and leaves.**
