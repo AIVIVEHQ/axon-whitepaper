@@ -22,7 +22,7 @@ AXON's value capture does not rely on inflationary subsidies, but on a **deflati
 
 ```mermaid
 flowchart LR
-    A["Payment flow / TPV<br/>AI-agent calls"] --> B["Protocol fee revenue"]
+    A["Payment flow / TPV<br/>U-Card spending · Wallet yield · social transactions · AI-agent calls"] --> B["Protocol fee revenue"]
     B --> C["Proportional buyback of AXON"]
     C --> D["Burn<br/>(circulation shrinks)"]
     D --> E["Scarcity · value rises"]
@@ -36,6 +36,10 @@ Payment flow / TPV / AI-agent calls → protocol fee revenue → proportional bu
 ## The interface with the copy-trading engine
 
 The [4.5 US-Equity Copy-Trading Engine](../part4-payfi/4-5-copy-trading-engine.md) is a direct entry point to this flywheel: the engine takes a proportional cut of user yield, and this capital is injected into the AXON reserve pool — part of it enters the buyback-and-burn flywheel along with protocol fees, supporting liquidity and token price; part of it replenishes the on-chain copy-trading reserve pool, backstopping the "principal-protected floor." Every real trade both gives users deterministic yield and settles value back into the L1.
+
+## The interface with the ecosystem application matrix
+
+Beyond the copy-trading engine, the [consumer super-app matrix](../part4-payfi/README.md) is an even wider inlet to this flywheel: every purchase on the [4.6 U-Card](../part4-payfi/4-6-u-card.md), every transfer and yield action in the [4.7 Wallet](../part4-payfi/4-7-wallet-app.md), and every value-bearing interaction in [4.8 Financial-Social](../part4-payfi/4-8-financial-social.md) is converted into real TPV → protocol fees → buyback-and-burn. The more the consumer application matrix flourishes, the wider the flywheel's inlet — this is where "empowering the chain" lands at the value-capture layer: **users' everyday payment, yield, and social behavior is minted directly into the token's deflationary loop.**
 
 This is the closed loop of AXON's tokenomics: **real payment and trading business → real protocol revenue → buyback-and-burn → token scarcity → network value.**
 

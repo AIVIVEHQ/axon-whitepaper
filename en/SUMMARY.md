@@ -38,6 +38,9 @@
   * [4.3 Cross-Border B2B & Merchant Acquiring](part4-payfi/4-3-crossborder-b2b.md)
   * [4.4 The Finance of the Time Value of Money](part4-payfi/4-4-time-value-of-money.md)
   * [4.5 The US-Equity Copy-Trading Engine: First Open Ecosystem](part4-payfi/4-5-copy-trading-engine.md)
+  * [4.6 The Crypto U-Card: Top-up, Spend, Bind WeChat/Alipay](part4-payfi/4-6-u-card.md)
+  * [4.7 AXON Wallet App: On-Chain Transfers, High-Value Yield, Decentralized Prediction Markets](part4-payfi/4-7-wallet-app.md)
+  * [4.8 The Financial-Social Ecosystem: A Complete Financial-Social Loop](part4-payfi/4-8-financial-social.md)
 
 ## Part V · AI-Native
 

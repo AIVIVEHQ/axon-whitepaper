@@ -92,3 +92,20 @@ The total value of payments carried by the network, a core metric for real busin
 
 **Design Target**
 This whitepaper's label for performance metrics, meaning "a design and engineering target, not a currently achieved measured value"; final values will be published after testnet benchmarking. See [Appendix B](b-parameters.md).
+
+## Ecosystem Applications
+
+**Crypto U-Card**
+AXON's ecosystem crypto payment card, turning on-chain stablecoins into purchasing power spendable across card acceptance networks and local scan-to-pay scenarios such as WeChat / Alipay, with top-up from fiat / other-chain assets. The inflow entry of the consumer application matrix. See [4.6](../part4-payfi/4-6-u-card.md).
+
+**AXON Wallet App**
+The super-app hub of the AXON ecosystem, uniting on-chain transfers, high-value yield (money-market floating return), and decentralized prediction markets, delivering a gas-free, sub-second-final experience via account abstraction and Paymaster. See [4.7](../part4-payfi/4-7-wallet-app.md).
+
+**Full-Scenario Ecosystem Mall**
+A commerce mall within the AXON ecosystem where users check out in one click with their stablecoin balance, settled on the L1, extending the spending radius from U-Card swiping to full-scenario goods and services. Together with the Wallet App it forms PayFi 2.0. See [4.7](../part4-payfi/4-7-wallet-app.md).
+
+**Financial-Social Ecosystem**
+A complete ecosystem fusing payment, yield, prediction, and social within one settlement layer — payment as the social primitive, with the relationship graph growing directly on a chain built for payments (Ecosystem 3); its complete form is a standalone chat-social app (Ecosystem 4). See [4.8](../part4-payfi/4-8-financial-social.md).
+
+**LMSR (Logarithmic Market Scoring Rule)**
+The automated market-making mechanism commonly used in decentralized prediction markets, with cost function $C(\vec q)=b\ln\sum_i e^{q_i/b}$, whose outcome prices are exactly the probabilities of each outcome. See [4.7](../part4-payfi/4-7-wallet-app.md).

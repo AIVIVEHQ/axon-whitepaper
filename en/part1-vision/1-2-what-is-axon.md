@@ -27,6 +27,10 @@ mindmap
       AI-agent payments · M2M · x402
       PayFi money market · float
       Cross-border B2B · merchant acquiring
+    Ecosystem application layer
+      PayFi payments · U-Card / mall / Wallet
+      Financial-social super-ecosystem
+      Chat-social app
     AI-Native
       Controlled payment execution
       Limits · time windows · allowlists
@@ -56,6 +60,8 @@ On top of the foundation, AXON launches four PayFi scenarios that stack layer up
 | AI-agent payments (M2M / x402) | A machine-native payment layer with bounded authorization for AI agents |
 | PayFi money market · float yield | Turn in-transit funds / receivables / float into an on-chain money market |
 | Cross-border B2B & merchant acquiring | Let SMEs send and receive cross-border in seconds without a correspondent-bank network |
+
+And above these four scenarios, AXON unfolds a user-facing **ecosystem application layer** tier by tier, in the order ecosystems open — the PayFi payment ecosystem (U-Card · full-scenario mall · Wallet App), the financial-social super-ecosystem, and the chat-social app ([4.6](../part4-payfi/4-6-u-card.md)–[4.8](../part4-payfi/4-8-financial-social.md)) — carrying these underlying capabilities into the pockets, daily lives, and relationships of hundreds of millions, taking "foundation-first, product-wedge" from infrastructure to everyday use.
 
 ### 3. AI-Native: Controlled Payment Execution
 

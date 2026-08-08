@@ -38,6 +38,9 @@
   * [4.3 跨境 B2B 与商户收单](part4-payfi/4-3-crossborder-b2b.md)
   * [4.4 货币时间价值的金融学](part4-payfi/4-4-time-value-of-money.md)
   * [4.5 美股带单引擎：首个开放生态](part4-payfi/4-5-copy-trading-engine.md)
+  * [4.6 Crypto U 卡：充值 · 消费 · 绑定微信支付宝](part4-payfi/4-6-u-card.md)
+  * [4.7 AXON Wallet App：链上转账 · 高价值理财 · 去中心化预测市场](part4-payfi/4-7-wallet-app.md)
+  * [4.8 金融社交生态：完整的金融社交闭环](part4-payfi/4-8-financial-social.md)
 
 ## Part V · AI 原生
 
