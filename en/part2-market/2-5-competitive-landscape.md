@@ -52,6 +52,15 @@ quadrantChart
 * **Lower-left / upper-left quadrants**: general-purpose chains and traditional rails, which either carry payments only as an afterthought or are simply not programmable.
 * **Upper-right quadrant** (purpose-built for payments **and** AI-native): **empty.** This is exactly the position AXON means to occupy.
 
+## Two "Foundation-Native" Axes — AXON's Differentiation
+
+A new wave of stablecoin payment L1s (such as **Tempo** and **Plasma**) and machine-payment protocols (the **x402** networks) is emerging fast — yet most remain "faster, cheaper, often EVM-compatible payment rails," with AI / agent payment bolted on at the application layer. Zoom in, and AXON's differentiation rests on two things built native into the foundation:
+
+* **PayFi (the time value of money)** — not merely moving money faster, but letting in-transit funds, receivables, and float enter an on-chain money market and earn a yield driven by real payment flows (floating, endogenous, not a promised return). Peers mostly stop at "moving money faster"; AXON builds payments and finance into the same foundational layer (see [4.2 PayFi Money Market](../part4-payfi/4-2-money-market.md)).
+* **AI-native (at the chain layer, not the app layer)** — account abstraction, session keys, and [x402](../part5-ai/5-3-x402-m2m.md) are chain-layer primitives that let AI agents be safely, boundedly, and revocably authorized to pay on their own; x402-style protocols themselves run on general-purpose chains, with settlement not optimized for this.
+
+In one line: **others are building faster stablecoin rails; AXON is designed from the foundation for two things — bringing the time value of money on-chain, and letting AI agents be safely authorized to spend on their own.**
+
 ## A Signal of Competition, Not a Threat
 
 It is worth stressing: the entry of giants like Circle and Stripe is, for AXON, **first a signal, not a threat**. When the issuer of USDC and the world's largest internet payment company both start building their own payment chains, they are confirming one thing through action — **the judgment that "payments need a dedicated chain" is right, and this market is large enough and important enough.**
