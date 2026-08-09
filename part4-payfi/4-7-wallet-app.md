@@ -11,7 +11,7 @@ Wallet App 与**全场景生态商城消费**一起，共同构成 AXON 第二�
 
 > **AXON Wallet App 把 U 卡里静止的余额，变成可转账、可生息、可参与市场的可编程链上资本——它是 AXON 生态的超级应用中枢。**
 
-Wallet 建立在 [3.7 账户抽象、会话密钥与 Paymaster](../part3-architecture/3-7-account-abstraction.md) 之上：用户看到的是一个熟悉的余额与「一键」按钮，底层则是账户抽象钱包、会话密钥授权与费用代付——**无助记词负担、无 gas 感知、秒级终局**。它对外呈现三大能力。
+Wallet 建立在 [3.7 账户抽象、会话密钥与 Paymaster](../part3-architecture/3-7-account-abstraction.md) 之上：用户看到的是一个熟悉的余额与「一键」按钮，底层则是账户抽象钱包、会话密钥授权与费用代付——**无助记词负担、无 gas 感知、秒级终局**。它把链上转账、高价值理财、预测市场、全场景生态商城消费，乃至母币 AXON 的持有与使用，收拢进同一个账户入口——是一个**数字银行级的一站式金融超级应用**：如同数字银行把账户、理财、支付与生活服务装进一个 App，AXON Wallet 把整条 PayFi 生态装进一个入口。以下逐一来看它的核心能力。
 
 ```mermaid
 flowchart TB
@@ -19,13 +19,18 @@ flowchart TB
     W --> T["链上转账"]
     W --> Y["高价值理财"]
     W --> P["去中心化预测市场"]
+    W --> M["全场景生态商城"]
+    W --> AX["持有 · 使用 AXON"]
     T -.底座.-> R1["4.1 结算 Rail"]
     Y -.底座.-> R2["4.2 PayFi 货币市场"]
     P -.结算基建.-> R3["4.5 / 6.4 生态预测平台"]
+    AX -.价值捕获.-> R4["7.3 通缩飞轮"]
     style W fill:#f5541c,stroke:#0a0908,color:#fff
     style T fill:#ff8a3d,stroke:#0a0908,color:#0a0908
     style Y fill:#ff8a3d,stroke:#0a0908,color:#0a0908
     style P fill:#ff8a3d,stroke:#0a0908,color:#0a0908
+    style M fill:#ff8a3d,stroke:#0a0908,color:#0a0908
+    style AX fill:#f5541c,stroke:#0a0908,color:#fff
 ```
 
 ## 一、链上转账：秒级、无 gas 感的价值流动
@@ -62,9 +67,17 @@ $$C(\vec q) = b \ln \sum_i e^{q_i / b}, \qquad p_i = \frac{e^{q_i / b}}{\sum_j e
 
 商城补齐了「持有稳定币」与「使用稳定币」之间的最后一段距离：一笔成交额为 $G$ 的商城消费，直接转化为链上真实支付流量，按协议费率 $\tau$ 贡献手续费 $\text{Fee} = G \times \tau$，汇入 [7.3 通缩飞轮](../part7-tokenomics/7-3-utility-flywheel.md)。**U 卡负责入金与线下消费、商城负责生态内全场景消费、Wallet 负责把余额用活——三者合起来，才是完整的 PayFi 2.0。**
 
+## 母币 AXON：生态的原生货币，在钱包里被持有与使用
+
+一个完整的金融超级应用，还需要一种把整条生态串起来的原生货币——这就是母币 **AXON**（见 [Part VII 代币经济](../part7-tokenomics/README.md)）。Wallet App 正是用户**持有与使用 AXON** 的入口：在钱包里，用户可以持有 AXON，并把它用于生态——**以 AXON 支付链上手续费可享阶梯折扣、质押 AXON 参与网络安全与治理、作为 PayFi 与 AI 代理场景的信誉押金**。
+
+AXON 在这里不是一个孤立的投机标的，而是**生态的原生货币与权益凭证**：U 卡消费、商城成交、理财与转账所产生的真实手续费，经 [7.3 通缩飞轮](../part7-tokenomics/7-3-utility-flywheel.md) 回购并销毁 AXON——**生态里被使用得越多，飞轮转得越快**。这把「用户在钱包里的日常金融行为」与「母币的长期价值捕获」直接接通：稳定币负责流动与消费，AXON 负责承载整条生态的安全、治理与价值回流。
+
+> **口径说明**：本节描述 AXON 的**效用与持有 / 使用场景**，**不涉及价格、市值、发行或投资回报**；代币的分配、解锁与流通口径以 [Part VII](../part7-tokenomics/README.md) 为准，初始价 / FDV / TGE 流通比例不予披露。持有与使用 AXON 存在市场与合规风险，具体开放范围以合规上线口径为准。
+
 ## 四位一体：Wallet 让价值在生态内循环
 
-转账、理财、预测三种能力在同一个账户里打通后，资本可以在生态内无摩擦流转：U 卡入金 → Wallet 转账/理财 → 闲时生息 → 参与预测市场 → 结算回稳定币余额 → 再消费。每一次流转都是一笔真实 TPV，按协议费率并入 [7.3 通缩飞轮](../part7-tokenomics/7-3-utility-flywheel.md)。**Wallet 不是三个功能的拼贴，而是让价值在 AXON 生态内持续循环、持续为 L1 沉淀真实业务量的中枢。**
+转账、理财、预测、商城消费与母币 AXON 的持有使用，在同一个账户里打通后，资本可以在生态内无摩擦流转：U 卡入金 → Wallet 转账/理财 → 闲时生息 → 参与预测市场 → 商城消费 → 结算回稳定币余额 → 再消费，其间产生的手续费经飞轮回购并销毁 AXON。每一次流转都是一笔真实 TPV，按协议费率并入 [7.3 通缩飞轮](../part7-tokenomics/7-3-utility-flywheel.md)。**Wallet 不是若干功能的拼贴，而是让价值在 AXON 生态内持续循环、持续为 L1 与母币 AXON 沉淀真实业务量的中枢。**
 
 > **口径说明**：本节为 `proposed design`，对应路线图 P1（转账 + 理财 MVP）→ P2（货币市场规模化、预测市场直连）阶段（[6.1](../part6-roadmap/6-1-roadmap.md)）。预测市场为生态平台承载、AXON 提供结算基建，非 AXON 自营；相关功能的地区开放范围以合规上线口径为准。
 
