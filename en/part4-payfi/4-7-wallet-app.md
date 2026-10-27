@@ -53,7 +53,7 @@ Here $r_i$ **is not a promised fixed number**, but a realized return that is end
 
 ## 3. Decentralized Prediction Markets: AXON Settles, Ecosystem Platforms Host
 
-Inside the Wallet, users connect directly to the decentralized prediction platforms in AXON's **open ecosystem** (Polymarket, Kalshi, Kairos, **etc.**, see [4.5](4-5-copy-trading-engine.md), [6.4](../part6-roadmap/6-4-ecosystem-season.md)): users participate in event markets with stablecoins, while **the finality of every wager, payout, and settlement lands on AXON L1**. This clarifies a boundary — **AXON is the settlement infrastructure and account base for these markets; the prediction platforms are ecosystem participants; AXON does not self-operate betting and does not act as the house.**
+Inside the Wallet, users connect directly to the decentralized prediction platforms in AXON's **open ecosystem** (Polymarket, Kalshi, **etc.**, see [4.5](4-5-copy-trading-engine.md), [6.4](../part6-roadmap/6-4-ecosystem-season.md)): users participate in event markets with stablecoins, while **the finality of every wager, payout, and settlement lands on AXON L1**. This clarifies a boundary — **AXON is the settlement infrastructure and account base for these markets; the prediction platforms are ecosystem participants; AXON does not self-operate betting and does not act as the house.**
 
 Mechanically, for a prediction market run by an automated market maker (LMSR, the Logarithmic Market Scoring Rule), the market-making cost function and outcome pricing are
 

@@ -57,7 +57,7 @@ flowchart LR
 第二阶段把地基兑现为可用的产品，目标是从最小可用（MVP）走向产品市场契合（PMF）：
 
 * **稳定币即时结算 Rail** 上线（[4.1](../part4-payfi/4-1-settlement-rail.md)）；
-* **生态一 · 美股带单引擎**——AXON **首个开放生态（已开放）**，赋能 Polymarket、Kalshi、Kairos 等预测平台生态，用确定性稳定币收益把外部流量换成真实 TVL 与地址（[4.5](../part4-payfi/4-5-copy-trading-engine.md)）；
+* **生态一 · 美股带单引擎**——AXON **首个开放生态（已开放）**，赋能 Polymarket、Kalshi 等预测平台生态，用确定性稳定币收益把外部流量换成真实 TVL 与地址（[4.5](../part4-payfi/4-5-copy-trading-engine.md)）；
 * **生态二 · PayFi 1.0：Crypto U 卡支付**首发——把链上稳定币变成可消费的购买力，PayFi 支付生态的第一步（[4.6](../part4-payfi/4-6-u-card.md)）；
 * **1–2 个 PayFi 场景**落地（跨境汇款 / 商户收单，[4.3](../part4-payfi/4-3-crossborder-b2b.md)）；
 * **AI 代理支付 SDK**（会话密钥）+ 费用代付（[5.2](../part5-ai/5-2-controlled-execution.md)、[3.7](../part3-architecture/3-7-account-abstraction.md)）；

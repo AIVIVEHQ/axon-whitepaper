@@ -15,7 +15,7 @@ The **Season 1 · Ecosystem Open Program** is the launch ceremony of the AXON ec
 
 * Open to all kinds of project teams — prediction platforms, payment applications, AI-agent developers, DeFi protocols, and more;
 * Onboarded project teams reuse AXON's settlement rail, account abstraction, PayFi yield capabilities, and compliance gateway, running their own products on AXON L1;
-* The prediction platforms empowered by the [4.5 US-Equity Copy-Trading Engine](../part4-payfi/4-5-copy-trading-engine.md) — Polymarket, Kalshi, Kairos, and others — are precisely the first batch of onboarded project teams, joining in the form of "**onboarding as open ecosystem partners**": they onboard as ecosystem partners, not as deep, exclusive bindings.
+* The prediction platforms empowered by the [4.5 US-Equity Copy-Trading Engine](../part4-payfi/4-5-copy-trading-engine.md) — Polymarket, Kalshi, and others — are precisely the first batch of onboarded project teams, joining in the form of "**onboarding as open ecosystem partners**": they onboard as ecosystem partners, not as deep, exclusive bindings.
 
 ## Incentive mechanism: token incentives for ecosystem growth
 

@@ -11,7 +11,7 @@ Along the "float + on-chain credit" direction described in [4.2 PayFi Money Mark
 
 ## Strategic Enablement: The Traffic-Swap Model
 
-The copy-trading engine is designed for the users of prediction platforms **such as Polymarket, Kalshi, and Kairos.** It solves a long-overlooked structural problem on these platforms:
+The copy-trading engine is designed for the users of prediction platforms **such as Polymarket and Kalshi.** It solves a long-overlooked structural problem on these platforms:
 
 * **Pain point** — prediction-market events often have long cycles (an election, an earnings report, a macro decision), during which user funds sit largely idle while awaiting the outcome, with no cross-domain financial tool to put that idle capital to work.
 * **Solution** — the prediction platform serves as the entry point providing traffic, and AXON provides the underlying trading and settlement infrastructure. Users take the stablecoins already on the prediction platform and, through AXON L1, **one-click copy-trade** US-equity strategies, letting idle capital keep earning yield during the waiting period.

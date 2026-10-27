@@ -57,7 +57,7 @@ This is of a piece with [3.4 Payment Finality](../part3-architecture/3-4-payment
 The second stage cashes the foundation into a usable product, with the goal of moving from minimum viable (MVP) to product-market fit (PMF):
 
 * **Stablecoin instant-settlement rail** goes live ([4.1](../part4-payfi/4-1-settlement-rail.md));
-* **Ecosystem 1 · US-equity copy-trading engine** — AXON's **first open ecosystem (already open)**, empowering the ecosystem of prediction platforms such as Polymarket, Kalshi, and Kairos, using deterministic stablecoin yield to convert external traffic into real TVL and addresses ([4.5](../part4-payfi/4-5-copy-trading-engine.md));
+* **Ecosystem 1 · US-equity copy-trading engine** — AXON's **first open ecosystem (already open)**, empowering the ecosystem of prediction platforms such as Polymarket and Kalshi, using deterministic stablecoin yield to convert external traffic into real TVL and addresses ([4.5](../part4-payfi/4-5-copy-trading-engine.md));
 * **Ecosystem 2 · PayFi 1.0: Crypto U-Card payments** launch — turning on-chain stablecoins into spendable purchasing power, the first step of the PayFi payment ecosystem ([4.6](../part4-payfi/4-6-u-card.md));
 * **1–2 PayFi scenarios** land (cross-border remittance / merchant acquiring, [4.3](../part4-payfi/4-3-crossborder-b2b.md));
 * **AI agent payment SDK** (session keys) + fee sponsorship ([5.2](../part5-ai/5-2-controlled-execution.md), [3.7](../part3-architecture/3-7-account-abstraction.md));

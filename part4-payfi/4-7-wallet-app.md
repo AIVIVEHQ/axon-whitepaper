@@ -53,7 +53,7 @@ $$NAV_t = NAV_0 \cdot \prod_i \left(1 + r_i \, \Delta t_i\right)$$
 
 ## 三、去中心化预测市场：AXON 结算，生态平台承载
 
-Wallet 内直连 AXON **开放生态**里的去中心化预测平台（Polymarket、Kalshi、Kairos **等**，见 [4.5](4-5-copy-trading-engine.md)、[6.4](../part6-roadmap/6-4-ecosystem-season.md)）：用户用稳定币参与事件市场，而**每一笔下注、赔付与结算的最终性都落在 AXON L1**。这厘清了一条边界——**AXON 是这些市场的结算基建与账户底座，预测平台是生态参与方；AXON 不自营博彩、不做庄**。
+Wallet 内直连 AXON **开放生态**里的去中心化预测平台（Polymarket、Kalshi **等**，见 [4.5](4-5-copy-trading-engine.md)、[6.4](../part6-roadmap/6-4-ecosystem-season.md)）：用户用稳定币参与事件市场，而**每一笔下注、赔付与结算的最终性都落在 AXON L1**。这厘清了一条边界——**AXON 是这些市场的结算基建与账户底座，预测平台是生态参与方；AXON 不自营博彩、不做庄**。
 
 从机制上看，一个自动做市（LMSR，Logarithmic Market Scoring Rule）的预测市场，其做市成本函数与结果定价为
 
